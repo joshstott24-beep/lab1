@@ -1,0 +1,14 @@
+AI Use - Lab 1: Peer Tutoring Hub
+AI tool used:
+Claude (Anthropic)
+
+Prompts I used:
+1. "Review my existing index.html, tutors.html, request-form.html, styles.css, and process-request.php against the Lab 1 instructions and course materials. Tell me what is correct, what is missing, and what needs to change."
+2. "Review my existing styles.css. Tell me what is worth keeping, what is unnecessary, and what conflicts with the Bootstrap layout."
+3. "Explain any important new or changed lines and Bootstrap classes so I understand what I am submitting."
+
+How AI helped:
+I had already written most of the code while following the lecture. I used Claude to review it one file at a time against the assignment. It caught broken file paths in index.html, the form action pointing to the images folder, missing Bootstrap classes like form-label, and the button text not matching "Request Session." It also explained how the Bootstrap grid classes (row, col-12, col-md-7, and col-md-5) make the form responsive, so I could understand the code I was submitting.
+
+Suggestion I revised:
+My original styles.css had its own CSS grid layout for the form, plus custom styles for headings, inputs, buttons, and tables. After adding the Bootstrap grid to request-form.html, these rules conflicted with it. The original CSS also had an invalid color value (fffff). I revised the stylesheet so it only handles basic typography, spacing, and colors while Bootstrap handles the responsive layout.
